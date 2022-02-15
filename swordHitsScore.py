@@ -12,12 +12,13 @@ while True:
         break
     mc.postToChat("Go!")
     
-    time.sleep(10)
+    time.sleep(60)
     blockHits=mc.events.pollBlockHits()
     blockHitsLength=len(blockHits)
-    mc.postToChat("Your score is"+str(blockHitsLength))
+    mc.postToChat("Your score is "+str(blockHitsLength))
     
     scoreboard[name]=blockHitsLength
     
     #Display the scoreboard
-    print(scoreboard)
+    for key in scoreboard:
+        print(key+" "+str(scoreboard[key]))
