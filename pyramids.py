@@ -8,5 +8,5 @@ pos=mc.player.getTilePos()
 x,y,z=pos.x+height,pos.y,pos.z
 
 for level in levels:
-    mc.setBlocks(x-level,y,z-level,x+level,x+level,y,z+level,block)
-    y+=1
+    mc.setBlocks(x-level,y,z-level,x+level,y,z+level,block)
+    y-=1
