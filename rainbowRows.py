@@ -21,4 +21,3 @@ for row in oneDimensionalRainbowList:
         x+=1
     y+=1
     x = startingX
-    
